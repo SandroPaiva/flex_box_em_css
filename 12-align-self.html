@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .flex-container{
+            max-width: 350px;
+            border: 1px solid;
+            display: flex;
+            margin: 5px;
+            
+        }
+        .align-container{
+            align-items: center;
+        }
+
+        .direction{
+            flex-direction: column;
+        }
+
+        .item{
+            background-color: brown;
+            color: #fff;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+        .center{
+            align-self: center;
+        }
+        .start{
+            align-self: flex-start;
+        }
+        .end{
+            align-self: flex-end;
+        }
+        .baseline{
+            align-self: baseline;
+        }
+        .stretch{
+            align-self: stretch;
+        }
+        .auto{
+            align-self: auto;
+        }
+
+
+    </style>
+    <title>Fundamentos - Align Self</title>
+</head>
+<body>
+    <h1>ROW</h1>
+    <section class="flex-container align-container">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Teste de texto para usar no exemplo</div>
+        <div class="item auto">item 4</div>
+    </section>
+
+    
+    <section class="flex-container">
+        <div class="item center">AAA</div>
+        <div class="item start">123</div>
+        <div class="item stretch">Teste de texto para usar no exemplo</div>
+        <div class="item end">item 4</div>
+    </section>
+    
+    <section class="flex-container">
+        <div class="item center">AAA</div>
+        <div class="item start">AAA</div>
+        <div class="item end">item 4</div>
+        <div class="item stretch">Teste de texto para usar no exemplo</div>
+    </section>
+
+    <h1>COLUMN</h1>
+    <section class="flex-container align-container direction">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Teste de texto para usar no exemplo</div>
+        <div class="item auto">item 4</div>
+    </section>
+
+    
+    <section class="flex-container direction">
+        <div class="item center">AAA</div>
+        <div class="item start">123</div>
+        <div class="item stretch">Teste de texto para usar no exemplo</div>
+        <div class="item end">item 4</div>
+    </section>
+    
+    <section class="flex-container direction">
+        <div class="item center">AAA</div>
+        <div class="item start">AAA</div>
+        <div class="item end">item 4</div>
+        <div class="item stretch">Teste de texto para usar no exemplo</div>
+    </section>
+
+
+
+</body>
+</html>

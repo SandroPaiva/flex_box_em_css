@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            height: 500px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid #000;
+        }
+
+        .item{
+            background-color: orangered;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: #fff;
+        }
+        .stretch{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+        .flex-start{
+            align-content: flex-start;
+        }
+        .flex-end{
+            align-content: flex-end;
+        }
+        .space-around{
+            align-content: space-around;
+        }
+        .space-between{
+            align-content: space-between;
+        }
+    </style>
+    <title>Fundamentos - Align Content</title>
+</head>
+<body>
+    <p>Stretch</p>
+    <div class="container stretch">
+        <div class="item">Lorem ipsum dolor sit amet, </div>
+        <div class="item">Nunc ac massa purus. In iaculis, nisl ac iaculis luctus, lacus risus commodo justo, </div>
+        <div class="item">Nulla quis rhoncus ipsum,</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac massa purus. In iaculis, </div>
+        <div class="item">Praesent tempus blandit nulla non fringilla. Donec erat quam, euismod a consectetur vel, posuere vitae justo.</div>
+        <div class="item">lobortis porta tortor quam ac nisl. Donec quis diam vel lectus lacinia fermentum.</div>
+        <div class="item">Nulla quis rhoncus ipsum, nec vestibulum dui. Cras id nulla in neque tempor condimentum.</div>
+    </div>
+
+    <p>Center</p>
+    <div class="container center">
+        <div class="item">Lorem ipsum dolor sit amet, </div>
+        <div class="item">Nunc ac massa purus. In iaculis, nisl ac iaculis luctus, </div>
+        <div class="item">Nulla quis rhoncus ipsum,</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac massa purus. In iaculis, </div>
+        <div class="item"> Donec erat quam, euismod a consectetur vel, posuere vitae justo.</div>
+        <div class="item">lobortis porta tortor quam ac nisl. Donec quis diam vel lectus lacinia fermentum.</div>
+        <div class="item">Nulla quis rhoncus ipsum, nec vestibulum dui. Cras id nulla in neque tempor condimentum.</div>
+    </div>
+    
+    <p>Flex Start</p>
+    <div class="container flex-start">
+        <div class="item">Lorem ipsum dolor sit amet, </div>
+        <div class="item">Nunc ac massa purus. In iaculis, nisl ac iaculis luctus, </div>
+        <div class="item">Nulla quis rhoncus ipsum,</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac massa purus. In iaculis, </div>
+        <div class="item"> Donec erat quam, euismod a consectetur vel, posuere vitae justo.</div>
+        <div class="item">lobortis porta tortor quam ac nisl. Donec quis diam vel lectus lacinia fermentum.</div>
+        <div class="item">Nulla quis rhoncus ipsum, nec vestibulum dui. Cras id nulla in neque tempor condimentum.</div>
+    </div>
+    <p>Flex End</p>
+    <div class="container flex-end">
+        <div class="item">Lorem ipsum dolor sit amet, </div>
+        <div class="item">Nunc ac massa purus. In iaculis, nisl ac iaculis luctus, </div>
+        <div class="item">Nulla quis rhoncus ipsum,</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac massa purus. In iaculis, </div>
+        <div class="item"> Donec erat quam, euismod a consectetur vel, posuere vitae justo.</div>
+        <div class="item">lobortis porta tortor quam ac nisl. Donec quis diam vel lectus lacinia fermentum.</div>
+        <div class="item">Nulla quis rhoncus ipsum, nec vestibulum dui. Cras id nulla in neque tempor condimentum.</div>
+    </div>
+    <p>Space Around</p>
+    <div class="container space-around">
+        <div class="item">Lorem ipsum dolor sit amet, </div>
+        <div class="item">Nunc ac massa purus. In iaculis, nisl ac iaculis luctus, </div>
+        <div class="item">Nulla quis rhoncus ipsum,</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac massa purus. In iaculis, adipiscing elit. Nunc ac massa purus. In iaculis, </div>
+        <div class="item"> Donec erat quam, euismod a consectetur vel, posuere vitae justo.</div>
+        <div class="item">lobortis porta tortor quam ac nisl. </div>
+        <div class="item">Nulla quis rhoncus ipsum, nec vestibulum dui.</div>
+    </div>
+    <p>Space Between</p>
+    <div class="container space-between">
+        <div class="item">Lorem ipsum dolor sit amet, </div>
+        <div class="item">Nunc ac massa purus. In iaculis, nisl ac iaculis luctus, </div>
+        <div class="item">Nulla quis rhoncus ipsum,</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac massa purus. In iaculis, adipiscing elit. Nunc ac massa purus. In iaculis, </div>
+        <div class="item"> Donec erat quam, euismod a consectetur vel, posuere vitae justo.</div>
+        <div class="item">lobortis porta tortor quam ac nisl. </div>
+        <div class="item">Nulla quis rhoncus ipsum, nec vestibulum dui.</div>
+    </div>
+    
+</body>
+</html>
